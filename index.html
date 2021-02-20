@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cresta Design | 快適なオフィス空間をデザインする会社</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel = "stylesheet" type = "text / css" href = "http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css" 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header class="header">
         <div class="header-inner">
             <h1 class="site-title"><a href="./">Cresta Design</a></h1>
             <nav class="header-nav">
@@ -36,7 +37,7 @@
         <div class="fv">
             <div class="main-copy">
                 <p class="en-copy">Design for Smile.</p>
-                <p class="jp-copy">快適なオフィスをデザインする</p>
+                <p class="jp-copy">快適なオフィスを<br class="sp-br">デザインする</p>
             </div>
         </div>
         <!-- END_fv -->
@@ -44,33 +45,35 @@
         <!-- concept -->
         <section class="section-wrapper">
             <h2 class="section-title">CONCEPT</h2>
+            <div class="section-inner">
             <p class="concept-lead">
-                “働きたくなる空間”をデザインすることで<br>
+                “働きたくなる空間”をデザインすることで<br class="pc-br">
                 人々を幸せにする。</p>
                 <div class="concept-content">
                     <p class="concept-text">
-                        私たちは、オフィスに特化した空間デザイン専門としてお<br>
-                        ります。その理由は、「働きたくなる空間で仕事ができれ<br>
-                        ば多くの人を幸せにできるのではないか」と考えるためで<br>
-                        す。そんな想いの株式会社Cresta Designだからこそで<br>
+                        私たちは、オフィスに特化した空間デザイン専門としてお
+                        ります。その理由は、「働きたくなる空間で仕事ができれ
+                        ば多くの人を幸せにできるのではないか」と考えるためで
+                        す。そんな想いの株式会社Cresta Designだからこそで
                         きる空間デザインを提供させていただきます。
                     </p>
                     <div class="concept-img-wrapper">
                         <img src="./img/concept-image@2x.jpg" alt="">
                     </div>
                 </div>
+            </div>
                 <div class="section-bottom">Our Concept</div>
         </section>
         <!-- END_concept -->
 
         <!-- works -->
-        <section class="section-wrapper">
-            <h2 class="section-title">Works</h2>
+        <section class="section-wrapper bg-works">
+            <h2 class="section-title text-right text-white">Works</h2>
             <ul class="works-list">
                 <li class="works-item">
                     <a href="#!">
                         <div class="works-list-img"><img src="./img/card-img01@2x.jpg" alt=""></div>
-                        <p class="worls-list-text">
+                        <p class="work service1s-list-text">
                             新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                         </p>
                     </a>
@@ -78,7 +81,7 @@
                 <li class="works-item">
                     <a href="#!">
                         <div class="works-list-img"><img src="./img/card-img02@2x.jpg" alt=""></div>
-                        <p class="worls-list-text">
+                        <p class="work service1s-list-text">
                             新規サイトを公開しました。今回のサイトは白と黒を基調にした
                         </p>
                     </a>
@@ -86,14 +89,14 @@
                 <li class="works-item">
                     <a href="#!">
                         <div class="works-list-img"><img src="./img/card-img03@2x.jpg" alt=""></div>
-                        <p class="worls-list-text">
+                        <p class="work service1s-list-text">
                             新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
                         </p>
                     </a>
                 </li>
             </ul>
             <a href="" class="link-btn">View more</a>
-            <div class="section-bottom">Our Works</div>
+            <div class="section-bottom text-white">Our Works</div>
         </section>
         <!-- END_works -->
 
@@ -101,22 +104,22 @@
         <section class="section-wrapper">
             <h2 class="section-title">Service</h2>
             <ul class="service-list">
-                <li class="service-item"><a href="#!">Hearing</a></li>
-                <li class="service-item"><a href="#!">Planning</a></li>
-                <li class="service-item"><a href="#!">Direction</a></li>
+                <li class="service-item service1"><a href="#!">Hearing</a></li>
+                <li class="service-item service2"><a href="#!">Planning</a></li>
+                <li class="service-item service3"><a href="#!">Direction</a></li>
             </ul>
-            <div class="section-bottom">Our Service</div>
+            <div class="section-bottom text-right">Our Service</div>
         </section>
         <!-- END_service -->
 
         <!-- contact -->
-        <section class="section-wrapper">
-            <h2 class="section-title">Contact</h2>
+        <section class="section-wrapper bg-contact">
+            <h2 class="section-title text-right text-white">Contact</h2>
             <div class="section-inner">
-                <a href="./contact/" class="link-btn">Contact</a>
                 <p class="contact-text">お気軽にご相談ください。</p>
+                <a href="./contact/" class="link-btn">Contact</a>
             </div>
-            <div class="section-bottom">Contact us</div>
+            <div class="section-bottom text-white">Contact us</div>
         </section>
         <!-- END_contact -->
     </main>

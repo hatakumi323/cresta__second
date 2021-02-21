@@ -20,6 +20,21 @@ li {
     list-style: none;
 }
 
+ul {
+    list-style-type:none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+}
+
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .section-wrapper {
     padding: 100px 0 70px;
 }
@@ -102,6 +117,7 @@ li {
     z-index: 1;
     box-sizing: border-box;
     width: 100%;
+    transition: .3s;
 }
 
 .header-inner {
@@ -145,15 +161,28 @@ li {
     display: none;
 }
 
+.header.fixed {
+    position:fixed;
+    background-color: #282F35;
+    padding: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
 /* first view */
 
 .fv {
     height: 100vh;
     min-height: 550px;
     position: relative;
-    background-image: url(../img/fv-bgi_01@2x.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.fv img {
+    height: 100vh;
+    min-height: 550px;
+    object-fit: cover;
 }
 
 .main-copy {
@@ -171,6 +200,10 @@ li {
 .jp-copy {
     font-size: 4rem;
     text-align: center;
+}
+
+.slick-arrow {
+    display: none !important;
 }
 
 /* concept */
@@ -235,6 +268,7 @@ li {
 
 .service-list {
     display: flex;
+    padding: 0;
 }
 
 .service-item {
@@ -370,11 +404,31 @@ li {
         height: 3px;
         width: 30px;
         background-color: #fff;
+        transition: .3s;
     }
 
     .bar_top,
     .bar_mid {
         margin-bottom: 8px;
+    }
+
+    .burger-btn.cross .bar_top {
+        transform: rotate(45deg) translate(8px,8px);
+        transition: .3s;
+    }
+
+    .burger-btn.cross .bar_mid {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .burger-btn.cross .bar_bottom {
+        transform: rotate(-45deg) translate(8px,-8px);
+        transition: .3s;
+    }
+
+    body.noscroll {
+        overflow: hidden;
     }
 
     button {
